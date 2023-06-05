@@ -5,7 +5,6 @@ import {useRef} from "react";
 function User() {
 
     const HistoryRef = useRef(null);
-    const AchRef = useRef(null);
     const SetRef = useRef(null);
 
     const LoginEdit = useRef(null);
@@ -19,27 +18,16 @@ function User() {
 
     function show_user(){
         const user = HistoryRef.current;
-        const ach = AchRef.current;
         const set = SetRef.current;
         user.style.display = "flex";
-        ach.style.display = "none";
         set.style.display = "none";
     }
-    function show_ach(){
-        const user = HistoryRef.current;
-        const ach = AchRef.current;
-        const set = SetRef.current;
-        ach.style.display = "flex";
-        user.style.display = "none";
-        set.style.display = "none";
-    }
+
     function show_set(){
         const user = HistoryRef.current;
-        const ach = AchRef.current;
         const set = SetRef.current;
         set.style.display = "flex";
         user.style.display = "none";
-        ach.style.display = "none";
     }
 
     return (
@@ -58,7 +46,6 @@ function User() {
 
                 <div className={"top-menu"}>
                     <div onClick={show_user} className={"menu-btn"}>History</div>
-                    <div onClick={show_ach} className={"menu-btn"}>Achievements</div>
                     <div onClick={show_set} className={"menu-btn"}>Settings</div>
                 </div>
 
@@ -81,10 +68,6 @@ function User() {
                         </tr>
                         </tbody>
                     </table>
-                </div>
-
-                <div ref={AchRef} className={"achievement-cont"}>
-                    Ach cont
                 </div>
 
                 <div ref={SetRef} className={"settings-cont"}>
