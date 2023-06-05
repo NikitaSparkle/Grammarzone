@@ -7,6 +7,7 @@ import Translate from "./components/translate/Translate";
 import Materials from "./components/materials/Materials";
 import Login from "./components/login/Login";
 import Admin from "./components/admin/Admin";
+import AdminLogin from "./components/adminLogin/AdminLogin";
 import User from "./components/user/User";
 import Test from "./components/test/Test";
 import Registration from "./components/registration/Registration";
@@ -24,7 +25,8 @@ function App() {
               <Route exact path="/materials" element={<Materials/>}/>
               <Route exact path="/login" element={<Login/>}/>
               <Route exact path="/user" element={<User/>}/>
-              <Route exact path="/admin" element={<Admin/>}/>
+              <Route exact path="/admin" element={<AdminLogin/>}/>
+              <Route exact path="/adminSite" element={<Admin/>}/>
               <Route exact path="/test" element={<Test/>}/>
               <Route exact path="/registration" element={<Registration/>}/>
             </Routes>

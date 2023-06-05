@@ -20,7 +20,7 @@ html {
     transition: 0.3s;
 }
 
-.main-head:hover{
+.main-head:hover {
     text-shadow: 0px 0px 5px rgba(35, 101, 213, 0.86);
     transition: 0.3s;
 }
@@ -33,7 +33,7 @@ html {
     border-bottom: 1px solid rgb(126, 126, 126);
 }
 
-.navbutton{
+.navbutton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,8 @@ html {
     transition: 0.3s;
     margin-top: 5px;
 }
-.navbutton:hover{
+
+.navbutton:hover {
     background-color: rgba(35, 101, 213, 0.86);
     border: 1px solid rgba(35, 101, 213, 0.86);
     box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
@@ -56,57 +57,58 @@ html {
     transition: 0.3s;
 }
 
-.test-main-cont {
-    min-height: 91.3vh;
-    height: fit-content;
+.admin-main-cont {
+    display: flex;
+    height: 100%;
     width: 100%;
+    text-align: center;
+}
+
+.admin-form-cont {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(235, 235, 235, 255);
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
 }
 
-.test-test-cont{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 50px;
-}
-
-.answer-num{
-    display: flex;
-}
-
-.test-name{
+label{
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 2.5vh;
     font-weight: bold;
 }
 
-.test-text{
-    margin-top: 20px;
-    font-size: 25px;
+input{
+    height: 3vh;
+    width: 40vh;
+    font-size: 2vh;
 }
 
-.answers-cont{
-    height: fit-content;
-    width: 100%;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 20px;
+.admin-submit-btn{
+    margin-top: 30px;
+    height: 4vh;
+    transition: 0.3s;
+    background-color: rgba(235, 235, 235, 255);
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-weight: bold;
 }
 
-.answer-row {
-    display: inline-block;
-    padding-top: 20px;
+.admin-submit-btn:hover{
+    cursor: pointer;
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    transition: 0.3s;
 }
 
-.row {
-    display: inline-block;
-    margin-right: 5px;
+.admin-register-form{
+    margin-top: 30px;
+    font-size: 1vh;
+}
+
+.admin-register-btn{
+    font-size: 2vh;
 }

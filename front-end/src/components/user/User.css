@@ -109,13 +109,41 @@ html {
     transition: 0.3s;
 }
 
-.user-cont{
-    display: none;
+.history-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(235, 235, 235, 255);
     height: 86.9vh;
     width: 81.8%;
     overflow-y: auto;
 }
+
+.history-table {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.history-table th,
+.history-table td {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.history-table th {
+    background-color: rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+}
+
+.history-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.history-table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 
 .achievement-cont{
     display: none;
@@ -134,6 +162,45 @@ html {
     overflow-y: auto;
 }
 
+.set-form{
+    display: flex;
+    flex-direction: column;
+}
+
 .set-input{
-    width: 10px;
+    width: 30vh;
+}
+
+.edit-btn{
+    display: inline-block;
+    height: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.edit-btn:hover{
+    cursor: pointer;
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.save-btn{
+    display: none;
+    height: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.save-btn:hover{
+    cursor: pointer;
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: 0.3s;
 }

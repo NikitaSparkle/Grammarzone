@@ -16,9 +16,57 @@ function Test() {
                 <NavLink className={"navbutton"} to={'/login'}>Login</NavLink>
             </nav>
 
-            <div className={"main-cont"}>
+            <div className={"test-main-cont"}>
 
-                This is Test Page
+                <div className={"test-test-cont"}>
+                    <div className={"test-name"}>Test Name</div>
+                    <div className={"test-text"}>Test Text Test Text Test Text Test Text Test Text Test Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                        Test Text Test Text Test Text Test Text Test Text Test Text Test Text Test TextTest Text Test Text
+                    </div>
+                    <div className="answers-cont">
+                        <div className="answer-row">
+                            <div className={"answer-num"}>1</div>
+                            <label>
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                            </label>
+                        </div>
+                        <br/>
+                        <div className="answer-row">
+                            <div className={"answer-num"}>2</div>
+                            <label>
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                                <input className={"row"} type="checkbox" value="Answer" />Answer
+                            </label>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
