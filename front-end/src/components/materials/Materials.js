@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import './Materials.css';
 import { NavLink } from "react-router-dom";
+import NavBar from "../NavBar/NavBar";
 
 function Materials() {
     const [materials, setMaterials] = useState([]);
 
     useEffect(() => {
-        fetch('https://grandmen.herokuapp.com/material')
+        fetch('https://gramamrsone.herokuapp.com/material')
             .then((response) => {
                 if (response.status === 200) {
                     response.json().then((data) => {
@@ -18,15 +19,7 @@ function Materials() {
 
     return (
         <div>
-            <NavLink className={"main-head"} to={"/"}><h2>Grammarzone</h2></NavLink>
-
-            <nav className={"navbar"}>
-                <NavLink className={"navbutton"} to={'/translate'}>Translate</NavLink>
-                <NavLink className={"navbutton"} to={'/reading'}>Reading</NavLink>
-                <NavLink className={"navbutton"} to={'/writing'}>Writing</NavLink>
-                <NavLink className={"navbutton"} to={'/materials'}>Materials</NavLink>
-                <NavLink className={"navbutton"} to={'/login'}>Login</NavLink>
-            </nav>
+            <NavBar/>
 
             <div className={"main-cont"}>
                 {materials.map((material,i) => (

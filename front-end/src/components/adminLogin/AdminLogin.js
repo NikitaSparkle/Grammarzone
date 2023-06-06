@@ -1,23 +1,53 @@
 import "./AdminLogin.css"
 import { NavLink, useNavigate } from "react-router-dom";
 import {useRef, useState} from "react";
+import NavBar from "../NavBar/NavBar";
 
 function AdminLogin(){
     const navigate = useNavigate();
     const AdminloginRef = useRef(null);
     const AdminPasswordRef = useRef(null);
 
+    function AdminLogin(){
+
+        const login = AdminloginRef.current.value;
+        const password = AdminPasswordRef.current.value;
+
+        console.log(login);
+        console.log(password);
+
+        fetch("https://gramamrsone.herokuapp.com/AdminAuth", {
+            method: "Post",
+            headers: {
+                'accept': "text/plain",
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+
+            },
+            body: JSON.stringify({
+                login: login,
+                password: password
+            }),
+        })
+            .then((response) => {
+                if (response.status === 200) {
+                    console.log("OK");
+                    response.json().then((data) => {
+                        sessionStorage.setItem('adminToken', data)
+                        navigate("/adminSite");
+                    })
+                } else if (response.status === 401) {
+                    console.log("request has not been completed");
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    }
+
     return(
         <div>
-            <NavLink className={"main-head"} to={"/"}><h2>Grammarzone</h2></NavLink>
-
-            <nav className={"navbar"}>
-                <NavLink className={"navbutton"} to={'/translate'}>Translate</NavLink>
-                <NavLink className={"navbutton"} to={'/reading'}>Reading</NavLink>
-                <NavLink className={"navbutton"} to={'/writing'}>Writing</NavLink>
-                <NavLink className={"navbutton"} to={'/materials'}>Materials</NavLink>
-                <NavLink className={"navbutton"} to={'/login'}>Login</NavLink>
-            </nav>
+            <NavBar/>
 
             <div className={"admin-main-cont"}>
                 <form className={"admin-form-cont"}>
@@ -25,7 +55,7 @@ function AdminLogin(){
                     <input ref={AdminloginRef} type={"email"}/>
                     <label>Admin Password</label>
                     <input ref={AdminPasswordRef} type={"password"}/>
-                    <input value={"Submit"} className={"admin-submit-btn"} type={"button"}/>
+                    <input onClick={AdminLogin} value={"Submit"} className={"admin-submit-btn"} type={"button"}/>
                 </form>
             </div>
         </div>

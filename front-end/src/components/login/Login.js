@@ -1,6 +1,7 @@
 import './Login.css';
 import { NavLink, useNavigate } from "react-router-dom";
 import {useRef, useState} from "react";
+import NavBar from "../NavBar/NavBar";
 
 function Login() {
     const navigate = useNavigate();
@@ -15,13 +16,13 @@ function Login() {
         console.log(login);
         console.log(password);
 
-        fetch("https://grandmen.herokuapp.com/login", {
+        fetch("https://gramamrsone.herokuapp.com/login", {
             method: "Post",
             headers: {
-                accept: "text/plain",
+                'accept': "text/plain",
                 "Content-Type": "application/json",
                 "Access-Control-Allow-Origin": "*",
-                token: sessionStorage.getItem("token"),
+
             },
             body: JSON.stringify({
                 login: login,
@@ -31,7 +32,11 @@ function Login() {
             .then((response) => {
                 if (response.status === 200) {
                     console.log("OK");
-                    navigate("/User");
+                    response.json().then((data) => {
+                        sessionStorage.setItem('token', data.token)
+                        sessionStorage.setItem('id', data.id)
+                        navigate("/User");
+                    })
                 } else if (response.status === 401) {
                     console.log("request has not been completed");
                 }
@@ -43,15 +48,7 @@ function Login() {
 
     return (
         <div>
-            <NavLink className={"main-head"} to={"/"}><h2>Grammarzone</h2></NavLink>
-
-            <nav className={"navbar"}>
-                <NavLink className={"navbutton"} to={'/translate'}>Translate</NavLink>
-                <NavLink className={"navbutton"} to={'/reading'}>Reading</NavLink>
-                <NavLink className={"navbutton"} to={'/writing'}>Writing</NavLink>
-                <NavLink className={"navbutton"} to={'/materials'}>Materials</NavLink>
-                <NavLink className={"navbutton"} to={'/login'}>Login</NavLink>
-            </nav>
+            <NavBar/>
 
             <div className={"main-cont"}>
 

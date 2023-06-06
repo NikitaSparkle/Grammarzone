@@ -1,8 +1,10 @@
 import './Writing.css';
 import {NavLink} from "react-router-dom";
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
+import NavBar from "../NavBar/NavBar";
 
 function Writing() {
+    const [tests, setTests] = useState([])
 
     const a1Ref = useRef(null);
     const a2Ref = useRef(null);
@@ -15,6 +17,27 @@ function Writing() {
     const b2BtnRef = useRef(null)
 
     function show_a1() {
+
+        fetch(`https://gramamrsone.herokuapp.com/test/?type_name=Write&level_name=A1`, {
+            headers: {
+                'accept': "text/plain",
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+            },
+        }).then((response) => {
+            if (response.status === 200) {
+                console.log("OK");
+                response.json().then((data) => {
+                    console.log(data)
+                    setTests(data)
+                })
+            }
+        })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+
+
         const a1 = a1Ref.current;
         const a2 = a2Ref.current;
         const b1 = b1Ref.current;
@@ -52,6 +75,26 @@ function Writing() {
     }
 
     function show_a2() {
+
+        fetch(`https://gramamrsone.herokuapp.com/test/?type_name=Write&level_name=A2`, {
+            headers: {
+                'accept': "text/plain",
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+            },
+        }).then((response) => {
+            if (response.status === 200) {
+                console.log("OK");
+                response.json().then((data) => {
+                    console.log(data)
+                    setTests(data)
+                })
+            }
+        })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+
         const a1 = a1Ref.current;
         const a2 = a2Ref.current;
         const b1 = b1Ref.current;
@@ -90,6 +133,25 @@ function Writing() {
     }
 
     function show_b1() {
+
+        fetch(`https://gramamrsone.herokuapp.com/test/?type_name=Write&level_name=B1`, {
+            headers: {
+                'accept': "text/plain",
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+            },
+        }).then((response) => {
+            if (response.status === 200) {
+                console.log("OK");
+                response.json().then((data) => {
+                    console.log(data)
+                    setTests(data)
+                })
+            }
+        })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
         const a1 = a1Ref.current;
         const a2 = a2Ref.current;
         const b1 = b1Ref.current;
@@ -128,6 +190,25 @@ function Writing() {
     }
 
     function show_b2() {
+
+        fetch(`https://gramamrsone.herokuapp.com/test/?type_name=Write&level_name=B2`, {
+            headers: {
+                'accept': "text/plain",
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+            },
+        }).then((response) => {
+            if (response.status === 200) {
+                console.log("OK");
+                response.json().then((data) => {
+                    console.log(data)
+                    setTests(data)
+                })
+            }
+        })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
         const a1 = a1Ref.current;
         const a2 = a2Ref.current;
         const b1 = b1Ref.current;
@@ -167,16 +248,7 @@ function Writing() {
 
     return (
         <div>
-
-            <NavLink className={"main-head"} to={"/"}><h2>Grammarzone</h2></NavLink>
-
-            <nav className={"navbar"}>
-                <NavLink className={"navbutton"} to={'/translate'}>Translate</NavLink>
-                <NavLink className={"navbutton"} to={'/reading'}>Reading</NavLink>
-                <NavLink className={"navbutton"} to={'/writing'}>Writing</NavLink>
-                <NavLink className={"navbutton"} to={'/materials'}>Materials</NavLink>
-                <NavLink className={"navbutton"} to={'/login'}>Login</NavLink>
-            </nav>
+            <NavBar/>
 
             <div className={"main-cont"}>
 
@@ -188,31 +260,27 @@ function Writing() {
                 </div>
 
                 <div ref={a1Ref} className={"test-cont"}>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
+                    {tests.map((test, i)=>{
+                        return <NavLink key={i} className={"test-btn"} to={`/test/${test._id}`}>{test.name_task}</NavLink>
+                    })}
                 </div>
 
                 <div ref={a2Ref} className={"test-cont"}>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
+                    {tests.map((test, i)=>{
+                        return <NavLink key={i} className={"test-btn"} to={`/test/${test._id}`}>{test.name_task}</NavLink>
+                    })}
                 </div>
 
                 <div ref={b1Ref} className={"test-cont"}>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
+                    {tests.map((test, i)=>{
+                        return <NavLink key={i} className={"test-btn"} to={`/test/${test._id}`}>{test.name_task}</NavLink>
+                    })}
                 </div>
 
                 <div ref={b2Ref} className={"test-cont"}>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
-                    <NavLink className={"test-btn"} to={"/test"}>Test</NavLink>
+                    {tests.map((test, i)=>{
+                        return <NavLink key={i} className={"test-btn"} to={`/test/${test._id}`}>{test.name_task}</NavLink>
+                    })}
                 </div>
 
             </div>

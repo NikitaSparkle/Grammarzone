@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./Registration.css";
 import { NavLink, useNavigate } from "react-router-dom";
+import NavBar from "../NavBar/NavBar";
 
 function Registration() {
     const navigate = useNavigate();
@@ -24,10 +25,10 @@ function Registration() {
         if(password!=rePassword){
             alert("Password is wrong");
         }else{
-            fetch("https://grandmen.herokuapp.com/registration", {
+            fetch("https://gramamrsone.herokuapp.com/registration", {
                 method: "Post",
                 headers: {
-                    accept: "text/plain",
+                    'accept': "text/plain",
                     "Content-Type": "application/json",
                     "Access-Control-Allow-Origin": "*",
                     token: sessionStorage.getItem("token"),
@@ -55,27 +56,7 @@ function Registration() {
 
     return (
         <div>
-            <NavLink className={"main-head"} to={"/"}>
-                <h2>Grammarzone</h2>
-            </NavLink>
-
-            <nav className={"navbar"}>
-                <NavLink className={"navbutton"} to={"/translate"}>
-                    Translate
-                </NavLink>
-                <NavLink className={"navbutton"} to={"/reading"}>
-                    Reading
-                </NavLink>
-                <NavLink className={"navbutton"} to={"/writing"}>
-                    Writing
-                </NavLink>
-                <NavLink className={"navbutton"} to={"/materials"}>
-                    Materials
-                </NavLink>
-                <NavLink className={"navbutton"} to={"/login"}>
-                    Login
-                </NavLink>
-            </nav>
+            <NavBar/>
 
             <div className={"main-cont"}>
                 <form className={"form-cont"}>
