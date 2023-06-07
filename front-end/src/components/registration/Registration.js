@@ -60,13 +60,13 @@ function Registration() {
 
             <div className={"main-cont"}>
                 <form className={"form-cont"}>
-                    <label>Login</label>
+                    <label>Логін</label>
                     <input ref={loginRef} type={"text"} />
-                    <label>Email</label>
+                    <label>E-mail</label>
                     <input ref={emailRef} type={"email"} />
-                    <label>Password</label>
+                    <label>Пароль</label>
                     <input ref={passwordRef} type={"password"} />
-                    <label>Re-enter Password</label>
+                    <label>Підтвердити Пароль</label>
                     <input ref={repasswordRef} type={"password"} />
                     <input
                         onClick={Register}
@@ -76,7 +76,7 @@ function Registration() {
                     />
                     <div className={"register-form"}>
                         <NavLink className={"login-btn"} to={"/login"}>
-                            Login
+                            Увійти
                         </NavLink>
                     </div>
                 </form>

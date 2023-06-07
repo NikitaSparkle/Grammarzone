@@ -13,81 +13,58 @@ function Main() {
             <div className={"main-main-cont"}>
 
                 <div className={"main-title"}>
-                    Welcome to Grammarzone!
+                    Ласкаво просимо до Grammarzone!
                 </div>
                 <div className={"main-text-gray"}>
                     <h3 className={"main-text"}>
-                        We are excited to introduce you to our web application, developed as a qualification project by
-                        two
-                        dedicated students. Our goal was to create a convenient and effective tool that can serve as a
-                        reliable
-                        assistant for learning the English language.
-                    </h3>
-                </div>
-                <div className={"main-text-blue"}>
-                    <h3 className={"main-text"}>
-                        In the modern world, proficiency in English holds immense value. It opens doors to new
-                        opportunities,
-                        enables easier communication, and helps overcome challenges in both personal and professional
-                        life.
-                        We
-                        understand the importance of developing language skills and strive to provide users with an easy
-                        and
-                        efficient path towards improvement.
-                    </h3>
-                </div>
-                <div className={"main-text-gray"}>
-                    <h3 className={"main-text"}>
-                        Grammarzone offers a wide range of resources and exercises, designed with a focus on the
-                        fundamental
-                        aspects of English grammar. Here, you will find educational materials to support your learning
-                        journey,
-                        as well as tests to reinforce your knowledge and track your progress.
-                    </h3>
-                </div>
-                <div className={"main-text-blue"}>
-                    <h3 className={"main-text"}>
-                        We hope that Grammarzone becomes your trusted partner in learning the English language. Whether
-                        you
-                        are
-                        a student, a teacher, or simply an English enthusiast, our application will provide you with
-                        valuable
-                        tools for successful education. Welcome to Grammarzone, your new assistant in mastering the
-                        English
-                        language!
-                    </h3>
-                </div>
-                <div className={"main-text-gray"}>
-                    <h3 className={"main-text"}>
-                        To get started, choose a test type: Translation, Reading, Writing. Then select your language
-                        level and the test you want to take.
-                        To access educational materials, go to the Materials tab.
-                        Register and log in to track your progress.
-                    </h3>
-                </div>
-                <div className={"main-text-blue"}>
-                    <h3 className={"main-text"}>
-                        Creators
-                    </h3>
-                </div>
-                <div className={"main-text-gray-photo"}>
-                    <img className={"main-text-blue-img"} src={Shabrat}/>
-                    <h3 className={"main-text"}>
-                        Alexey Shabrat
+                        Ми з радістю представляємо вам наш веб-додаток, розроблений як кваліфікаційний проект двох
+                        студентів. Нашою метою було створити зручний та ефективний інструмент, який може
+                        слугувати надійним помічником у вивченні англійської мови.
                         <br/>
-                        KN 19-1 group of
+                        У сучасному світі володіння англійською мовою має велике значення. Воно відчиняє двері до нових
+                        можливостей, полегшує комунікацію та допомагає подолати виклики як у особистому, так і у
+                        професійному житті. Ми розуміємо важливість розвитку мовних навичок і прагнемо надати
+                        користувачам легкий та ефективний шлях до покращення.
                         <br/>
-                        Dnipro Technological University "STEP"
+                        Grammarzone пропонує широкий спектр ресурсів та вправ, створених з фокусом на основних аспектах
+                        граматики англійської мови. Тут ви знайдете навчальні матеріали, що підтримують ваш шлях
+                        навчання, а також тести, що закріплюють ваші знання та відстежують ваш прогрес. Ми сподіваємося,
+                        що Grammarzone стане вашим надійним партнером у вивченні англійської мови.
+                        Незалежно від того, чи ви студент, викладач чи просто ентузіаст англійської мови, наш додаток
+                        надасть вам цінні інструменти для успішної освіти. Ласкаво просимо до Grammarzone, вашого нового
+                        помічника у володінні англійською мовою!
+                    </h3>
+                </div>
+                <div className={"main-text-blue"}>
+                    <h3 className={"main-text"}>
+                        Щоб почати, виберіть тип тесту: Переклад, Читання, Письмо. Потім виберіть рівень мови та тест,
+                        який ви хочете здати. Щоб отримати доступ до навчальних матеріалів, перейдіть на вкладку
+                        "Матеріали". Зареєструйтеся та увійдіть, щоб відстежувати ваш прогрес.
+                    </h3>
+                </div>
+                <div className={"main-text-gray"}>
+                    <h3 className={"main-text"}>
+                        Розробники
                     </h3>
                 </div>
                 <div className={"main-text-blue-photo"}>
+                    <img className={"main-text-blue-img"} src={Shabrat}/>
+                    <h3 className={"main-text"}>
+                        Алексій Шабрат
+                        <br/>
+                        Група КН 19-1
+                        <br/>
+                        Дніпровського Технологічного Университету "ШАГ"
+                    </h3>
+                </div>
+                <div className={"main-text-gray-photo"}>
                     <img className={"main-text-gray-img"} src={Shevchenko}/>
                     <h3 className={"main-text"}>
-                        Nikita Shevchenko
+                        Нікіта Шевченко
                         <br/>
-                        KN 19-1 group of
+                        Група КН 19-1
                         <br/>
-                        Dnipro Technological University "STEP"
+                        Дніпровського Технологічного Университету "ШАГ"
                     </h3>
                 </div>
             </div>

@@ -53,15 +53,15 @@ function Login() {
             <div className={"main-cont"}>
 
                 <form className={"form-cont"}>
-                    <label>Login</label>
+                    <label>Логін</label>
                     <input ref={loginRef} type={"email"}/>
-                    <label>Password</label>
+                    <label>Пароль</label>
                     <input ref={passwordRef} type={"password"}/>
                     <input onClick={Login} value={"Submit"} className={"submit-btn"} type={"button"}/>
                     <div className={"register-form"}>
-                        <h1>Do not have account yet?</h1>
+                        <h1>Ще не зареєструвались?</h1>
                         <br/>
-                        <NavLink className={"register-btn"} to={'/registration'}>Register</NavLink>
+                        <NavLink className={"register-btn"} to={'/registration'}>Реєстрація</NavLink>
                     </div>
                 </form>
 

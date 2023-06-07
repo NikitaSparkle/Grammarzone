@@ -82,7 +82,7 @@ function User() {
             <div className={"user-main-cont"}>
 
                 <div className={"top-menu"}>
-                    <div onClick={show_user} className={"menu-btn"}>History</div>
+                    <div onClick={show_user} className={"menu-btn"}>Історія Тестів</div>
                     {/*<div onClick={show_set} className={"menu-btn"}>Settings</div>*/}
                 </div>
                 {/*<button onClick={()=>test()}>aaaa</button>*/}
@@ -90,9 +90,9 @@ function User() {
                     <table className={"history-table"}>
                         <thead>
                         <tr>
-                            <th>Test Name</th>
-                            <th>Test Level</th>
-                            <th>Result</th>
+                            <th>Назва тесту</th>
+                            <th>Рівень тесту</th>
+                            <th>Результат</th>
                         </tr>
                         </thead>
                         <tbody>
