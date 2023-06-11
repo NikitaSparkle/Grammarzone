@@ -88,9 +88,11 @@ html {
     font-weight: bold;
 }
 
-.test-text{
+.test-text {
     margin-top: 20px;
     font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .answers-cont{
