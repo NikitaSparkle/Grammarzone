@@ -81,6 +81,34 @@ function Admin() {
     const [answerFiveThree, setAnswerFiveThree] = useState('');
     const [answerFiveFour, setAnswerFiveFour] = useState('');
     const [answerFiveFive, setAnswerFiveFive] = useState('');
+    const [questionSix, setQuestionSix] = useState('');
+    const [querySix, setQuerySix] = useState('');
+    const [answerSixOne, setAnswerSixOne] = useState('');
+    const [answerSixTwo, setAnswerSixTwo] = useState('');
+    const [answerSixThree, setAnswerSixThree] = useState('');
+    const [answerSixFour, setAnswerSixFour] = useState('');
+    const [answerSixFive, setAnswerSixFive] = useState('');
+    const [questionSeven, setQuestionSeven] = useState('');
+    const [querySeven, setQuerySeven] = useState('');
+    const [answerSevenOne, setAnswerSevenOne] = useState('');
+    const [answerSevenTwo, setAnswerSevenTwo] = useState('');
+    const [answerSevenThree, setAnswerSevenThree] = useState('');
+    const [answerSevenFour, setAnswerSevenFour] = useState('');
+    const [answerSevenFive, setAnswerSevenFive] = useState('');
+    const [questionEight, setQuestionEight] = useState('');
+    const [queryEight, setQueryEight] = useState('');
+    const [answerEightOne, setAnswerEightOne] = useState('');
+    const [answerEightTwo, setAnswerEightTwo] = useState('');
+    const [answerEightThree, setAnswerEightThree] = useState('');
+    const [answerEightFour, setAnswerEightFour] = useState('');
+    const [answerEightFive, setAnswerEightFive] = useState('');
+    const [questionNine, setQuestionNine] = useState('');
+    const [queryNine, setQueryNine] = useState('');
+    const [answerNineOne, setAnswerNineOne] = useState('');
+    const [answerNineTwo, setAnswerNineTwo] = useState('');
+    const [answerNineThree, setAnswerNineThree] = useState('');
+    const [answerNineFour, setAnswerNineFour] = useState('');
+    const [answerNineFive, setAnswerNineFive] = useState('');
 
     const materialsTableTopBtn = useRef(null);
     const materialsAddTopBtn = useRef(null);
@@ -294,6 +322,42 @@ function Admin() {
                         answer_4: answerFiveFour,
                         answer_5: answerFiveFive,
                     },
+                    {
+                        question: questionSix,
+                        query_answer: querySix,
+                        answer_1: answerSixOne,
+                        answer_2: answerSixTwo,
+                        answer_3: answerSixThree,
+                        answer_4: answerSixFour,
+                        answer_5: answerSixFive,
+                    },
+                    {
+                        question: questionSeven,
+                        query_answer: querySeven,
+                        answer_1: answerSevenOne,
+                        answer_2: answerSevenTwo,
+                        answer_3: answerSevenThree,
+                        answer_4: answerSevenFour,
+                        answer_5: answerSevenFive,
+                    },
+                    {
+                        question: questionEight,
+                        query_answer: queryEight,
+                        answer_1: answerEightOne,
+                        answer_2: answerEightTwo,
+                        answer_3: answerEightThree,
+                        answer_4: answerEightFour,
+                        answer_5: answerEightFive,
+                    },
+                    {
+                        question: questionNine,
+                        query_answer: queryNine,
+                        answer_1: answerNineOne,
+                        answer_2: answerNineTwo,
+                        answer_3: answerNineThree,
+                        answer_4: answerNineFour,
+                        answer_5: answerNineFive,
+                    }
                 ]
             }),
         })
@@ -342,6 +406,38 @@ function Admin() {
                     setAnswerFiveThree('')
                     setAnswerFiveFour('')
                     setAnswerFiveFive('')
+
+                    setQuestionSix('')
+                    setQuerySix('')
+                    setAnswerSixOne('')
+                    setAnswerSixTwo('')
+                    setAnswerSixThree('')
+                    setAnswerSixFour('')
+                    setAnswerSixFive('')
+
+                    setQuestionSeven('')
+                    setQuerySeven('')
+                    setAnswerSevenOne('')
+                    setAnswerSevenTwo('')
+                    setAnswerSevenThree('')
+                    setAnswerSevenFour('')
+                    setAnswerSevenFive('')
+
+                    setQuestionEight('')
+                    setQueryEight('')
+                    setAnswerEightOne('')
+                    setAnswerEightTwo('')
+                    setAnswerEightThree('')
+                    setAnswerEightFour('')
+                    setAnswerEightFive('')
+
+                    setQuestionNine('')
+                    setQueryNine('')
+                    setAnswerNineOne('')
+                    setAnswerNineTwo('')
+                    setAnswerNineThree('')
+                    setAnswerNineFour('')
+                    setAnswerNineFive('')
                 } else if (response.status === 401) {
                     console.log("request has not been completed");
                     navigate("/admin");
@@ -464,6 +560,42 @@ function Admin() {
                         answer_4: answerFiveFour,
                         answer_5: answerFiveFive,
                     },
+                    {
+                        question: questionSix,
+                        query_answer: querySix,
+                        answer_1: answerSixOne,
+                        answer_2: answerSixTwo,
+                        answer_3: answerSixThree,
+                        answer_4: answerSixFour,
+                        answer_5: answerSixFive,
+                    },
+                    {
+                        question: questionSeven,
+                        query_answer: querySeven,
+                        answer_1: answerSevenOne,
+                        answer_2: answerSevenTwo,
+                        answer_3: answerSevenThree,
+                        answer_4: answerSevenFour,
+                        answer_5: answerSevenFive,
+                    },
+                    {
+                        question: questionEight,
+                        query_answer: queryEight,
+                        answer_1: answerEightOne,
+                        answer_2: answerEightTwo,
+                        answer_3: answerEightThree,
+                        answer_4: answerEightFour,
+                        answer_5: answerEightFive,
+                    },
+                    {
+                        question: questionNine,
+                        query_answer: queryNine,
+                        answer_1: answerNineOne,
+                        answer_2: answerNineTwo,
+                        answer_3: answerNineThree,
+                        answer_4: answerNineFour,
+                        answer_5: answerNineFive,
+                    }
                 ]
             }),
         })
@@ -512,6 +644,38 @@ function Admin() {
                     setAnswerFiveThree('')
                     setAnswerFiveFour('')
                     setAnswerFiveFive('')
+
+                    setQuestionSix('')
+                    setQuerySix('')
+                    setAnswerSixOne('')
+                    setAnswerSixTwo('')
+                    setAnswerSixThree('')
+                    setAnswerSixFour('')
+                    setAnswerSixFive('')
+
+                    setQuestionSeven('')
+                    setQuerySeven('')
+                    setAnswerSevenOne('')
+                    setAnswerSevenTwo('')
+                    setAnswerSevenThree('')
+                    setAnswerSevenFour('')
+                    setAnswerSevenFive('')
+
+                    setQuestionEight('')
+                    setQueryEight('')
+                    setAnswerEightOne('')
+                    setAnswerEightTwo('')
+                    setAnswerEightThree('')
+                    setAnswerEightFour('')
+                    setAnswerEightFive('')
+
+                    setQuestionNine('')
+                    setQueryNine('')
+                    setAnswerNineOne('')
+                    setAnswerNineTwo('')
+                    setAnswerNineThree('')
+                    setAnswerNineFour('')
+                    setAnswerNineFive('')
                 } else if (response.status === 401) {
                     console.log("request has not been completed");
                     navigate("/admin");
@@ -610,6 +774,42 @@ function Admin() {
                         answer_4: answerFiveFour,
                         answer_5: answerFiveFive,
                     },
+                    {
+                        question: questionSix,
+                        query_answer: querySix,
+                        answer_1: answerSixOne,
+                        answer_2: answerSixTwo,
+                        answer_3: answerSixThree,
+                        answer_4: answerSixFour,
+                        answer_5: answerSixFive,
+                    },
+                    {
+                        question: questionSeven,
+                        query_answer: querySeven,
+                        answer_1: answerSevenOne,
+                        answer_2: answerSevenTwo,
+                        answer_3: answerSevenThree,
+                        answer_4: answerSevenFour,
+                        answer_5: answerSevenFive,
+                    },
+                    {
+                        question: questionEight,
+                        query_answer: queryEight,
+                        answer_1: answerEightOne,
+                        answer_2: answerEightTwo,
+                        answer_3: answerEightThree,
+                        answer_4: answerEightFour,
+                        answer_5: answerEightFive,
+                    },
+                    {
+                        question: questionNine,
+                        query_answer: queryNine,
+                        answer_1: answerNineOne,
+                        answer_2: answerNineTwo,
+                        answer_3: answerNineThree,
+                        answer_4: answerNineFour,
+                        answer_5: answerNineFive,
+                    }
                 ]
             }),
         })
@@ -658,6 +858,38 @@ function Admin() {
                     setAnswerFiveThree('')
                     setAnswerFiveFour('')
                     setAnswerFiveFive('')
+
+                    setQuestionSix('')
+                    setQuerySix('')
+                    setAnswerSixOne('')
+                    setAnswerSixTwo('')
+                    setAnswerSixThree('')
+                    setAnswerSixFour('')
+                    setAnswerSixFive('')
+
+                    setQuestionSeven('')
+                    setQuerySeven('')
+                    setAnswerSevenOne('')
+                    setAnswerSevenTwo('')
+                    setAnswerSevenThree('')
+                    setAnswerSevenFour('')
+                    setAnswerSevenFive('')
+
+                    setQuestionEight('')
+                    setQueryEight('')
+                    setAnswerEightOne('')
+                    setAnswerEightTwo('')
+                    setAnswerEightThree('')
+                    setAnswerEightFour('')
+                    setAnswerEightFive('')
+
+                    setQuestionNine('')
+                    setQueryNine('')
+                    setAnswerNineOne('')
+                    setAnswerNineTwo('')
+                    setAnswerNineThree('')
+                    setAnswerNineFour('')
+                    setAnswerNineFive('')
                 } else if (response.status === 401) {
                     console.log("request has not been completed");
                     navigate("/admin");
@@ -1070,7 +1302,7 @@ function Admin() {
                                 <input value={answerFourFive} onChange={(e) => setAnswerFourFive(e.target.value)}
                                        className={"writing-answer"} type={"text"}/>
                             </div>
-                            <div className={"rtranslate-question-form"}>
+                            <div className={"translate-question-form"}>
                                 <lable>Question 5</lable>
                                 <input value={questionFive} onChange={(e) => setQuestionFive(e.target.value)}
                                        className={"writing-question"} type={"text"}/>
@@ -1087,6 +1319,82 @@ function Admin() {
                                 <input value={answerFiveFour} onChange={(e) => setAnswerFiveFour(e.target.value)}
                                        className={"writing-answer"} type={"text"}/>
                                 <input value={answerFiveFive} onChange={(e) => setAnswerFiveFive(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                            </div>
+                            <div className={"translate-question-form"}>
+                                <lable>Question 6</lable>
+                                <input value={questionSix} onChange={(e) => setQuestionSix(e.target.value)}
+                                       className={"writing-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={querySix} onChange={(e) => setQuerySix(e.target.value)}
+                                       className={"writing-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerSixOne} onChange={(e) => setAnswerSixOne(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSixTwo} onChange={(e) => setAnswerSixTwo(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSixThree} onChange={(e) => setAnswerSixThree(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSixFour} onChange={(e) => setAnswerSixFour(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSixFive} onChange={(e) => setAnswerSixFive(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                            </div>
+                            <div className={"translate-question-form"}>
+                                <lable>Question 7</lable>
+                                <input value={questionSeven} onChange={(e) => setQuestionSeven(e.target.value)}
+                                       className={"writing-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={querySeven} onChange={(e) => setQuerySeven(e.target.value)}
+                                       className={"writing-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerSevenOne} onChange={(e) => setAnswerSevenOne(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSevenTwo} onChange={(e) => setAnswerSevenTwo(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSevenThree} onChange={(e) => setAnswerSevenThree(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSevenFour} onChange={(e) => setAnswerSevenFour(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSevenFive} onChange={(e) => setAnswerSevenFive(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                            </div>
+                            <div className={"translate-question-form"}>
+                                <lable>Question 8</lable>
+                                <input value={questionEight} onChange={(e) => setQuestionEight(e.target.value)}
+                                       className={"writing-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={querySeven} onChange={(e) => setQueryEight(e.target.value)}
+                                       className={"writing-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerEightOne} onChange={(e) => setAnswerEightOne(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerEightTwo} onChange={(e) => setAnswerEightTwo(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerEightThree} onChange={(e) => setAnswerEightThree(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerEightFour} onChange={(e) => setAnswerEightFour(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerEightFive} onChange={(e) => setAnswerEightFive(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                            </div>
+                            <div className={"translate-question-form"}>
+                                <lable>Question 9</lable>
+                                <input value={questionNine} onChange={(e) => setQuestionNine(e.target.value)}
+                                       className={"writing-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={queryNine} onChange={(e) => setQueryNine(e.target.value)}
+                                       className={"writing-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerNineOne} onChange={(e) => setAnswerNineOne(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerNineTwo} onChange={(e) => setAnswerNineTwo(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerNineThree} onChange={(e) => setAnswerNineThree(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerNineFour} onChange={(e) => setAnswerNineFour(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerNineFive} onChange={(e) => setAnswerNineFive(e.target.value)}
                                        className={"writing-answer"} type={"text"}/>
                             </div>
                             <input value={"Submit"} onClick={() => add_translate_handler()}
@@ -1149,94 +1457,170 @@ function Admin() {
                                        className={"writing-query"} type={"text"}/>
                                 <lable>Answers</lable>
                                 <input value={answerOneOne} onChange={(e) => setAnswerOneOne(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerOneTwo} onChange={(e) => setAnswerOneTwo(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerOneThree} onChange={(e) => setAnswerOneThree(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerOneFour} onChange={(e) => setAnswerOneFour(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerOneFive} onChange={(e) => setAnswerOneFive(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                             </div>
                             <div className={"reading-question-form"}>
                                 <lable>Question 2</lable>
                                 <input value={questionTwo} onChange={(e) => setQuestionTwo(e.target.value)}
-                                       className={"writing-question"} type={"text"}/>
+                                       className={"reading-question"} type={"text"}/>
                                 <lable>Query Answer</lable>
                                 <input value={queryTwo} onChange={(e) => setQueryTwo(e.target.value)}
-                                       className={"writing-query"} type={"text"}/>
+                                       className={"reading-query"} type={"text"}/>
                                 <lable>Answers</lable>
                                 <input value={answerTwoOne} onChange={(e) => setAnswerTwoOne(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerTwoTwo} onChange={(e) => setAnswerTwoTwo(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerTwoThree} onChange={(e) => setAnswerTwoThree(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerTwoFour} onChange={(e) => setAnswerTwoFour(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerTwoFive} onChange={(e) => setAnswerTwoFive(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                             </div>
                             <div className={"reading-question-form"}>
                                 <lable>Question 3</lable>
                                 <input value={questionThree} onChange={(e) => setQuestionThree(e.target.value)}
-                                       className={"writing-question"} type={"text"}/>
+                                       className={"reading-question"} type={"text"}/>
                                 <lable>Query Answer</lable>
                                 <input value={queryThree} onChange={(e) => setQueryThree(e.target.value)}
-                                       className={"writing-query"} type={"text"}/>
+                                       className={"reading-query"} type={"text"}/>
                                 <lable>Answers</lable>
                                 <input value={answerThreeOne} onChange={(e) => setAnswerThreeOne(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerThreeTwo} onChange={(e) => setAnswerThreeTwo(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerThreeThree} onChange={(e) => setAnswerThreeThree(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerThreeFour} onChange={(e) => setAnswerThreeFour(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerThreeFive} onChange={(e) => setAnswerThreeFive(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                             </div>
                             <div className={"reading-question-form"}>
                                 <lable>Question 4</lable>
                                 <input value={questionFour} onChange={(e) => setQuestionFour(e.target.value)}
-                                       className={"writing-question"} type={"text"}/>
+                                       className={"reading-question"} type={"text"}/>
                                 <lable>Query Answer</lable>
                                 <input value={queryFour} onChange={(e) => setQueryFour(e.target.value)}
-                                       className={"writing-query"} type={"text"}/>
+                                       className={"reading-query"} type={"text"}/>
                                 <lable>Answers</lable>
                                 <input value={answerFourOne} onChange={(e) => setAnswerFourOne(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerFourTwo} onChange={(e) => setAnswerFourTwo(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerFourThree} onChange={(e) => setAnswerFourThree(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerFourFour} onChange={(e) => setAnswerFourFour(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerFourFive} onChange={(e) => setAnswerFourFive(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                             </div>
                             <div className={"reading-question-form"}>
                                 <lable>Question 5</lable>
                                 <input value={questionFive} onChange={(e) => setQuestionFive(e.target.value)}
-                                       className={"writing-question"} type={"text"}/>
+                                       className={"reading-question"} type={"text"}/>
                                 <lable>Query Answer</lable>
                                 <input value={queryFive} onChange={(e) => setQueryFive(e.target.value)}
-                                       className={"writing-query"} type={"text"}/>
+                                       className={"reading-query"} type={"text"}/>
                                 <lable>Answers</lable>
                                 <input value={answerFiveOne} onChange={(e) => setAnswerFiveOne(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerFiveTwo} onChange={(e) => setAnswerFiveTwo(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerFiveThree} onChange={(e) => setAnswerFiveThree(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerFiveFour} onChange={(e) => setAnswerFiveFour(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
                                 <input value={answerFiveFive} onChange={(e) => setAnswerFiveFive(e.target.value)}
-                                       className={"writing-answer"} type={"text"}/>
+                                       className={"reading-answer"} type={"text"}/>
+                            </div>
+                            <div className={"reading-question-form"}>
+                                <lable>Question 6</lable>
+                                <input value={questionSix} onChange={(e) => setQuestionSix(e.target.value)}
+                                       className={"reading-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={querySix} onChange={(e) => setQuerySix(e.target.value)}
+                                       className={"reading-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerSixOne} onChange={(e) => setAnswerSixOne(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerSixTwo} onChange={(e) => setAnswerSixTwo(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerSixThree} onChange={(e) => setAnswerSixThree(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerSixFour} onChange={(e) => setAnswerSixFour(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerSixFive} onChange={(e) => setAnswerSixFive(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                            </div>
+                            <div className={"reading-question-form"}>
+                                <lable>Question 7</lable>
+                                <input value={questionSeven} onChange={(e) => setQuestionSeven(e.target.value)}
+                                       className={"reading-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={querySeven} onChange={(e) => setQuerySeven(e.target.value)}
+                                       className={"reading-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerSevenOne} onChange={(e) => setAnswerSevenOne(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerSevenTwo} onChange={(e) => setAnswerSevenTwo(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerSevenThree} onChange={(e) => setAnswerSevenThree(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerSevenFour} onChange={(e) => setAnswerSevenFour(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerSevenFive} onChange={(e) => setAnswerSevenFive(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                            </div>
+                            <div className={"reading-question-form"}>
+                                <lable>Question 8</lable>
+                                <input value={questionEight} onChange={(e) => setQuestionEight(e.target.value)}
+                                       className={"reading-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={querySeven} onChange={(e) => setQueryEight(e.target.value)}
+                                       className={"reading-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerEightOne} onChange={(e) => setAnswerEightOne(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerEightTwo} onChange={(e) => setAnswerEightTwo(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerEightThree} onChange={(e) => setAnswerEightThree(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerEightFour} onChange={(e) => setAnswerEightFour(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerEightFive} onChange={(e) => setAnswerEightFive(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                            </div>
+                            <div className={"reading-question-form"}>
+                                <lable>Question 9</lable>
+                                <input value={questionNine} onChange={(e) => setQuestionNine(e.target.value)}
+                                       className={"reading-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={queryNine} onChange={(e) => setQueryNine(e.target.value)}
+                                       className={"reading-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerNineOne} onChange={(e) => setAnswerNineOne(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerNineTwo} onChange={(e) => setAnswerNineTwo(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerNineThree} onChange={(e) => setAnswerNineThree(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerNineFour} onChange={(e) => setAnswerNineFour(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
+                                <input value={answerNineFive} onChange={(e) => setAnswerNineFive(e.target.value)}
+                                       className={"reading-answer"} type={"text"}/>
                             </div>
                             <input value={"Submit"} onClick={() => add_reading_handler()}
-                                   className={"writing-submit-btn"} type={"button"}/>
+                                   className={"reading-submit-btn"} type={"button"}/>
                         </form>
                     </div>
                 </div>
@@ -1379,6 +1763,82 @@ function Admin() {
                                 <input value={answerFiveFour} onChange={(e) => setAnswerFiveFour(e.target.value)}
                                        className={"writing-answer"} type={"text"}/>
                                 <input value={answerFiveFive} onChange={(e) => setAnswerFiveFive(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                            </div>
+                            <div className={"writing-question-form"}>
+                                <lable>Question 6</lable>
+                                <input value={questionSix} onChange={(e) => setQuestionSix(e.target.value)}
+                                       className={"writing-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={querySix} onChange={(e) => setQuerySix(e.target.value)}
+                                       className={"writing-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerSixOne} onChange={(e) => setAnswerSixOne(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSixTwo} onChange={(e) => setAnswerSixTwo(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSixThree} onChange={(e) => setAnswerSixThree(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSixFour} onChange={(e) => setAnswerSixFour(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSixFive} onChange={(e) => setAnswerSixFive(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                            </div>
+                            <div className={"writing-question-form"}>
+                                <lable>Question 7</lable>
+                                <input value={questionSeven} onChange={(e) => setQuestionSeven(e.target.value)}
+                                       className={"writing-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={querySeven} onChange={(e) => setQuerySeven(e.target.value)}
+                                       className={"writing-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerSevenOne} onChange={(e) => setAnswerSevenOne(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSevenTwo} onChange={(e) => setAnswerSevenTwo(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSevenThree} onChange={(e) => setAnswerSevenThree(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSevenFour} onChange={(e) => setAnswerSevenFour(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerSevenFive} onChange={(e) => setAnswerSevenFive(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                            </div>
+                            <div className={"writing-question-form"}>
+                                <lable>Question 8</lable>
+                                <input value={questionEight} onChange={(e) => setQuestionEight(e.target.value)}
+                                       className={"writing-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={querySeven} onChange={(e) => setQueryEight(e.target.value)}
+                                       className={"writing-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerEightOne} onChange={(e) => setAnswerEightOne(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerEightTwo} onChange={(e) => setAnswerEightTwo(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerEightThree} onChange={(e) => setAnswerEightThree(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerEightFour} onChange={(e) => setAnswerEightFour(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerEightFive} onChange={(e) => setAnswerEightFive(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                            </div>
+                            <div className={"writing-question-form"}>
+                                <lable>Question 9</lable>
+                                <input value={questionNine} onChange={(e) => setQuestionNine(e.target.value)}
+                                       className={"writing-question"} type={"text"}/>
+                                <lable>Query Answer</lable>
+                                <input value={queryNine} onChange={(e) => setQueryNine(e.target.value)}
+                                       className={"writing-query"} type={"text"}/>
+                                <lable>Answers</lable>
+                                <input value={answerNineOne} onChange={(e) => setAnswerNineOne(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerNineTwo} onChange={(e) => setAnswerNineTwo(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerNineThree} onChange={(e) => setAnswerNineThree(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerNineFour} onChange={(e) => setAnswerNineFour(e.target.value)}
+                                       className={"writing-answer"} type={"text"}/>
+                                <input value={answerNineFive} onChange={(e) => setAnswerNineFive(e.target.value)}
                                        className={"writing-answer"} type={"text"}/>
                             </div>
                             <input value={"Submit"} onClick={() => add_writing_handler()}
