@@ -66,9 +66,18 @@ function Test() {
             .then((response) => {
                 if (response.status === 200) {
                     console.log("OK");
-                    navigate("/login");
+                    if(sessionStorage.getItem('token')===null){
+                        navigate("/login");
+                    }else{
+                        navigate("/User");
+                    }
                 } else if (response.status === 401) {
                     console.log("request has not been completed");
+                    if(sessionStorage.getItem('token')===null){
+                        navigate("/login");
+                    }else{
+                        navigate("/User");
+                    }
                 }
             })
             .catch((error) => {
