@@ -1,6 +1,6 @@
 import "./Admin.css"
 import {NavLink, useNavigate} from "react-router-dom";
-import React, {useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import NavBar from "../NavBar/NavBar";
 
 function Admin() {
@@ -127,6 +127,12 @@ function Admin() {
 
     const [userData, setUserData] = useState([])
 
+    useEffect(()=>{
+        console.log("Admin Token: " + sessionStorage.getItem('adminToken'));
+        if(!sessionStorage.getItem('adminToken')){
+            navigate("/admin");
+        }
+    },[])
 
     function add_material_handler() {
         fetch("https://gramamrsone.herokuapp.com/material", {
